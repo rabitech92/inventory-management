@@ -39,8 +39,4 @@ public class MyUserDetailService implements UserDetailsService {
         }
         return user.getRole().split(",");
     }
-
-    public MyUser saveUser(MyUser myUser){
-        return repository.save(myUser);
-    }
 }
