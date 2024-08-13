@@ -50,9 +50,4 @@ public class ContentController {
             throw new UsernameNotFoundException("Invalid credentials");
         }
     }
-
-    @PostMapping("/register")
-    public MyUser saveUser(@RequestBody MyUser myUser){
-        return myUserDetailService.saveUser(myUser);
-    }
 }
